@@ -1,6 +1,8 @@
 body {
 	background-image: linear-gradient(#050227, #000);
     background-image: cover;
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍬</text></svg>"),
+        auto;
 }
 
 ul {
@@ -26,8 +28,9 @@ a {
 	justify-content: space-around;
 	align-items: center;
 	padding: 30px 20px;
+
 }
-.header__logo {
+.header__logo-img {
 	width: 100px;
 	height: 100px;
 }
@@ -35,17 +38,47 @@ a {
 	font-family: 'Butcherman', sans-serif;
     color: white;
     font-size: 40px;
+	font-weight: 400;
 }
 .header__list {
-
-}
-.header__item {
-
-}
-.header__link {
-
+display: flex;
+gap: 50px;
 }
 
+.header__link:hover, 
+.header__link:focus {
+	color: rgb(255, 136, 0);
+}
+
+/* section frnknstn */
+.frankenstein__section {
+	height:100vh;
+	padding: 30px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+.frankenstein__title {
+	color: white;
+	font-family: "Nosifer", sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+}
+.frankenstein__text {
+	color: white;
+	font-family:  'Amatic SC', sans-serif;
+    font-size: 40px;
+    font-weight: 400;;
+}
+.frankenstein__img {
+	width: 400px;
+	transition: all 400ms ease-in;
+}
+
+.frankenstein__img:hover {
+	transform: scale(1.5);
+}
 /* container */
 .container {
 	width: 100%;
